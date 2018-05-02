@@ -214,7 +214,7 @@ class CalendarMonth extends React.Component {
                   onDayClick,
                   renderDayContents,
                   phrases,
-                  modifiers: modifiers[toISODateString(day)],
+                  modifiers: new Set(modifiers[toISODateString(day)]),
                   ariaLabelFormat: dayAriaLabelFormat,
                 }))}
               </CalendarWeek>
